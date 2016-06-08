@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		270B80A61CD9D86C00B12650 /* Default-568h@3x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 270B809F1CD9D86C00B12650 /* Default-568h@3x-1.png */; };
+		270B80A71CD9D86C00B12650 /* QRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270B80A11CD9D86C00B12650 /* QRCodeController.m */; };
+		270B80A81CD9D86C00B12650 /* 使用说明.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 270B80A21CD9D86C00B12650 /* 使用说明.rtf */; };
+		270B80A91CD9D86C00B12650 /* 扫描框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270B80A31CD9D86C00B12650 /* 扫描框@2x.png */; };
+		270B80AA1CD9D86C00B12650 /* 扫描线@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270B80A41CD9D86C00B12650 /* 扫描线@2x.png */; };
+		270B80AB1CD9D86C00B12650 /* 白色返回_想去@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270B80A51CD9D86C00B12650 /* 白色返回_想去@2x.png */; };
+		270E28E11CAE552F007AE885 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E28E01CAE552F007AE885 /* main.m */; };
+		270E28E41CAE552F007AE885 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E28E31CAE552F007AE885 /* AppDelegate.m */; };
+		270E28E71CAE552F007AE885 /* UDPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E28E61CAE552F007AE885 /* UDPController.m */; };
+		270E28EA1CAE552F007AE885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270E28E81CAE552F007AE885 /* Main.storyboard */; };
+		270E28ED1CAE552F007AE885 /* UDPPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 270E28EB1CAE552F007AE885 /* UDPPlayer.xcdatamodeld */; };
+		270E28EF1CAE552F007AE885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270E28EE1CAE552F007AE885 /* Assets.xcassets */; };
+		270E28F21CAE552F007AE885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270E28F01CAE552F007AE885 /* LaunchScreen.storyboard */; };
+		270E28FD1CAE552F007AE885 /* UDPPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E28FC1CAE552F007AE885 /* UDPPlayerTests.m */; };
+		270E29081CAE5530007AE885 /* UDPPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E29071CAE5530007AE885 /* UDPPlayerUITests.m */; };
+		270E29251CAE558F007AE885 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 270E29161CAE558F007AE885 /* CHANGELOG.md */; };
+		270E29261CAE558F007AE885 /* libffmpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E29211CAE558F007AE885 /* libffmpeg.a */; };
+		270E29271CAE558F007AE885 /* libopenssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E29221CAE558F007AE885 /* libopenssl.a */; };
+		270E29281CAE558F007AE885 /* libVitamio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E29231CAE558F007AE885 /* libVitamio.a */; };
+		270E29291CAE558F007AE885 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 270E29241CAE558F007AE885 /* LICENSE */; };
+		270E292B1CAE55FB007AE885 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E292A1CAE55FB007AE885 /* libz.tbd */; };
+		270E292D1CAE5609007AE885 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E292C1CAE5609007AE885 /* libbz2.tbd */; };
+		270E292F1CAE5614007AE885 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E292E1CAE5614007AE885 /* libiconv.tbd */; };
+		270E29311CAE5620007AE885 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E29301CAE5620007AE885 /* libstdc++.tbd */; };
+		270E29331CAE562A007AE885 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E29321CAE562A007AE885 /* AVFoundation.framework */; };
+		270E29351CAE5633007AE885 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E29341CAE5633007AE885 /* AudioToolbox.framework */; };
+		270E29371CAE563B007AE885 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E29361CAE563B007AE885 /* CoreMedia.framework */; };
+		270E29391CAE5642007AE885 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E29381CAE5642007AE885 /* CoreVideo.framework */; };
+		270E293B1CAE564C007AE885 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E293A1CAE564C007AE885 /* MediaPlayer.framework */; };
+		270E293D1CAE5653007AE885 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E293C1CAE5653007AE885 /* OpenGLES.framework */; };
+		270E293F1CAE5659007AE885 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E293E1CAE5659007AE885 /* QuartzCore.framework */; };
+		2713B8A11CD87A65006ACBE9 /* chatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2713B8A01CD87A65006ACBE9 /* chatController.m */; };
+		273891321CC8F2F400F0E921 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273891311CC8F2F400F0E921 /* AssetsLibrary.framework */; };
+		273891371CC8F50700F0E921 /* ZYQAssetPicker.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 273891341CC8F50700F0E921 /* ZYQAssetPicker.Bundle */; };
+		273891381CC8F50700F0E921 /* ZYQAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273891361CC8F50700F0E921 /* ZYQAssetPickerController.m */; };
+		2738913B1CC9A4B400F0E921 /* homeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738913A1CC9A4B400F0E921 /* homeController.m */; };
+		2738913D1CC9F89F00F0E921 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2738913C1CC9F89F00F0E921 /* icon.png */; };
+		27452ED11CBCE3C200AC5FDE /* VRController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27452ED01CBCE3C200AC5FDE /* VRController.m */; };
+		27452ED51CBCE6BD00AC5FDE /* UtoVRPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27452ED31CBCE6BD00AC5FDE /* UtoVRPlayer.framework */; };
+		27452ED61CBCE6BD00AC5FDE /* UtoVRPlayerResouces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27452ED41CBCE6BD00AC5FDE /* UtoVRPlayerResouces.bundle */; };
+		27452ED81CBCE6DC00AC5FDE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27452ED71CBCE6DC00AC5FDE /* CoreMotion.framework */; };
+		27452EDA1CBCE6E700AC5FDE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27452ED91CBCE6E700AC5FDE /* GLKit.framework */; };
+		27452EDC1CBCEA3000AC5FDE /* Marionette.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27452EDB1CBCEA3000AC5FDE /* Marionette.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		270E28F91CAE552F007AE885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270E28D41CAE552F007AE885 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270E28DB1CAE552F007AE885;
+			remoteInfo = UDPPlayer;
+		};
+		270E29041CAE5530007AE885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270E28D41CAE552F007AE885 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270E28DB1CAE552F007AE885;
+			remoteInfo = UDPPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		270B809F1CD9D86C00B12650 /* Default-568h@3x-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@3x-1.png"; sourceTree = "<group>"; };
+		270B80A01CD9D86C00B12650 /* QRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeController.h; sourceTree = "<group>"; };
+		270B80A11CD9D86C00B12650 /* QRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeController.m; sourceTree = "<group>"; };
+		270B80A21CD9D86C00B12650 /* 使用说明.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "使用说明.rtf"; sourceTree = "<group>"; };
+		270B80A31CD9D86C00B12650 /* 扫描框@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描框@2x.png"; sourceTree = "<group>"; };
+		270B80A41CD9D86C00B12650 /* 扫描线@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描线@2x.png"; sourceTree = "<group>"; };
+		270B80A51CD9D86C00B12650 /* 白色返回_想去@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白色返回_想去@2x.png"; sourceTree = "<group>"; };
+		270E28DC1CAE552F007AE885 /* UDPPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDPPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		270E28E01CAE552F007AE885 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		270E28E21CAE552F007AE885 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		270E28E31CAE552F007AE885 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		270E28E51CAE552F007AE885 /* UDPController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPController.h; sourceTree = "<group>"; };
+		270E28E61CAE552F007AE885 /* UDPController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPController.m; sourceTree = "<group>"; };
+		270E28E91CAE552F007AE885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		270E28EC1CAE552F007AE885 /* UDPPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UDPPlayer.xcdatamodel; sourceTree = "<group>"; };
+		270E28EE1CAE552F007AE885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		270E28F11CAE552F007AE885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		270E28F31CAE552F007AE885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270E28F81CAE552F007AE885 /* UDPPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDPPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		270E28FC1CAE552F007AE885 /* UDPPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPPlayerTests.m; sourceTree = "<group>"; };
+		270E28FE1CAE552F007AE885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270E29031CAE5530007AE885 /* UDPPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDPPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		270E29071CAE5530007AE885 /* UDPPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPPlayerUITests.m; sourceTree = "<group>"; };
+		270E29091CAE5530007AE885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270E29161CAE558F007AE885 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		270E29191CAE558F007AE885 /* VDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDefines.h; sourceTree = "<group>"; };
+		270E291A1CAE558F007AE885 /* Vitamio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vitamio.h; sourceTree = "<group>"; };
+		270E291B1CAE558F007AE885 /* VMediaExtracter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMediaExtracter.h; sourceTree = "<group>"; };
+		270E291C1CAE558F007AE885 /* VMediaExtracterDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMediaExtracterDef.h; sourceTree = "<group>"; };
+		270E291D1CAE558F007AE885 /* VMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMediaPlayer.h; sourceTree = "<group>"; };
+		270E291E1CAE558F007AE885 /* VMediaPlayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMediaPlayerDelegate.h; sourceTree = "<group>"; };
+		270E291F1CAE558F007AE885 /* VPlayerManageDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPlayerManageDef.h; sourceTree = "<group>"; };
+		270E29201CAE558F007AE885 /* VSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSingleton.h; sourceTree = "<group>"; };
+		270E29211CAE558F007AE885 /* libffmpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffmpeg.a; sourceTree = "<group>"; };
+		270E29221CAE558F007AE885 /* libopenssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopenssl.a; sourceTree = "<group>"; };
+		270E29231CAE558F007AE885 /* libVitamio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVitamio.a; sourceTree = "<group>"; };
+		270E29241CAE558F007AE885 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		270E292A1CAE55FB007AE885 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		270E292C1CAE5609007AE885 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		270E292E1CAE5614007AE885 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		270E29301CAE5620007AE885 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		270E29321CAE562A007AE885 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		270E29341CAE5633007AE885 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		270E29361CAE563B007AE885 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		270E29381CAE5642007AE885 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		270E293A1CAE564C007AE885 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		270E293C1CAE5653007AE885 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		270E293E1CAE5659007AE885 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2713B89F1CD87A65006ACBE9 /* chatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatController.h; sourceTree = "<group>"; };
+		2713B8A01CD87A65006ACBE9 /* chatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatController.m; sourceTree = "<group>"; };
+		273891311CC8F2F400F0E921 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		273891341CC8F50700F0E921 /* ZYQAssetPicker.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYQAssetPicker.Bundle; sourceTree = "<group>"; };
+		273891351CC8F50700F0E921 /* ZYQAssetPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYQAssetPickerController.h; sourceTree = "<group>"; };
+		273891361CC8F50700F0E921 /* ZYQAssetPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYQAssetPickerController.m; sourceTree = "<group>"; };
+		273891391CC9A4B400F0E921 /* homeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeController.h; sourceTree = "<group>"; };
+		2738913A1CC9A4B400F0E921 /* homeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeController.m; sourceTree = "<group>"; };
+		2738913C1CC9F89F00F0E921 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		27452ECF1CBCE3C200AC5FDE /* VRController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRController.h; sourceTree = "<group>"; };
+		27452ED01CBCE3C200AC5FDE /* VRController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRController.m; sourceTree = "<group>"; };
+		27452ED31CBCE6BD00AC5FDE /* UtoVRPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UtoVRPlayer.framework; sourceTree = "<group>"; };
+		27452ED41CBCE6BD00AC5FDE /* UtoVRPlayerResouces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UtoVRPlayerResouces.bundle; sourceTree = "<group>"; };
+		27452ED71CBCE6DC00AC5FDE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		27452ED91CBCE6E700AC5FDE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		27452EDB1CBCEA3000AC5FDE /* Marionette.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marionette.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		270E28D91CAE552F007AE885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273891321CC8F2F400F0E921 /* AssetsLibrary.framework in Frameworks */,
+				27452EDA1CBCE6E700AC5FDE /* GLKit.framework in Frameworks */,
+				27452ED81CBCE6DC00AC5FDE /* CoreMotion.framework in Frameworks */,
+				270E293F1CAE5659007AE885 /* QuartzCore.framework in Frameworks */,
+				270E293D1CAE5653007AE885 /* OpenGLES.framework in Frameworks */,
+				270E293B1CAE564C007AE885 /* MediaPlayer.framework in Frameworks */,
+				270E29391CAE5642007AE885 /* CoreVideo.framework in Frameworks */,
+				270E29371CAE563B007AE885 /* CoreMedia.framework in Frameworks */,
+				270E29351CAE5633007AE885 /* AudioToolbox.framework in Frameworks */,
+				270E29331CAE562A007AE885 /* AVFoundation.framework in Frameworks */,
+				27452ED51CBCE6BD00AC5FDE /* UtoVRPlayer.framework in Frameworks */,
+				270E29311CAE5620007AE885 /* libstdc++.tbd in Frameworks */,
+				270E292F1CAE5614007AE885 /* libiconv.tbd in Frameworks */,
+				270E292D1CAE5609007AE885 /* libbz2.tbd in Frameworks */,
+				270E292B1CAE55FB007AE885 /* libz.tbd in Frameworks */,
+				270E29271CAE558F007AE885 /* libopenssl.a in Frameworks */,
+				270E29261CAE558F007AE885 /* libffmpeg.a in Frameworks */,
+				270E29281CAE558F007AE885 /* libVitamio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E28F51CAE552F007AE885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E29001CAE5530007AE885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		270B809E1CD9D86C00B12650 /* QRcode */ = {
+			isa = PBXGroup;
+			children = (
+				270B809F1CD9D86C00B12650 /* Default-568h@3x-1.png */,
+				270B80A01CD9D86C00B12650 /* QRCodeController.h */,
+				270B80A11CD9D86C00B12650 /* QRCodeController.m */,
+				270B80A21CD9D86C00B12650 /* 使用说明.rtf */,
+				270B80A31CD9D86C00B12650 /* 扫描框@2x.png */,
+				270B80A41CD9D86C00B12650 /* 扫描线@2x.png */,
+				270B80A51CD9D86C00B12650 /* 白色返回_想去@2x.png */,
+			);
+			path = QRcode;
+			sourceTree = "<group>";
+		};
+		270E28D31CAE552F007AE885 = {
+			isa = PBXGroup;
+			children = (
+				270B809E1CD9D86C00B12650 /* QRcode */,
+				273891331CC8F50700F0E921 /* ZYQAssetPickerController */,
+				273891311CC8F2F400F0E921 /* AssetsLibrary.framework */,
+				27452ED91CBCE6E700AC5FDE /* GLKit.framework */,
+				27452ED71CBCE6DC00AC5FDE /* CoreMotion.framework */,
+				27452ED21CBCE6BD00AC5FDE /* UtoVRPlayerSDK */,
+				270E293E1CAE5659007AE885 /* QuartzCore.framework */,
+				270E293C1CAE5653007AE885 /* OpenGLES.framework */,
+				270E293A1CAE564C007AE885 /* MediaPlayer.framework */,
+				270E29381CAE5642007AE885 /* CoreVideo.framework */,
+				270E29361CAE563B007AE885 /* CoreMedia.framework */,
+				270E29341CAE5633007AE885 /* AudioToolbox.framework */,
+				270E29321CAE562A007AE885 /* AVFoundation.framework */,
+				270E29301CAE5620007AE885 /* libstdc++.tbd */,
+				270E292E1CAE5614007AE885 /* libiconv.tbd */,
+				270E292C1CAE5609007AE885 /* libbz2.tbd */,
+				270E292A1CAE55FB007AE885 /* libz.tbd */,
+				270E29151CAE558F007AE885 /* Vitamio */,
+				270E28DE1CAE552F007AE885 /* UDPPlayer */,
+				270E28FB1CAE552F007AE885 /* UDPPlayerTests */,
+				270E29061CAE5530007AE885 /* UDPPlayerUITests */,
+				270E28DD1CAE552F007AE885 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		270E28DD1CAE552F007AE885 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				270E28DC1CAE552F007AE885 /* UDPPlayer.app */,
+				270E28F81CAE552F007AE885 /* UDPPlayerTests.xctest */,
+				270E29031CAE5530007AE885 /* UDPPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		270E28DE1CAE552F007AE885 /* UDPPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2738913C1CC9F89F00F0E921 /* icon.png */,
+				27452EDB1CBCEA3000AC5FDE /* Marionette.mp4 */,
+				270E28E21CAE552F007AE885 /* AppDelegate.h */,
+				270E28E31CAE552F007AE885 /* AppDelegate.m */,
+				273891391CC9A4B400F0E921 /* homeController.h */,
+				2738913A1CC9A4B400F0E921 /* homeController.m */,
+				270E28E51CAE552F007AE885 /* UDPController.h */,
+				270E28E61CAE552F007AE885 /* UDPController.m */,
+				27452ECF1CBCE3C200AC5FDE /* VRController.h */,
+				27452ED01CBCE3C200AC5FDE /* VRController.m */,
+				2713B89F1CD87A65006ACBE9 /* chatController.h */,
+				2713B8A01CD87A65006ACBE9 /* chatController.m */,
+				270E28E81CAE552F007AE885 /* Main.storyboard */,
+				270E28EE1CAE552F007AE885 /* Assets.xcassets */,
+				270E28F01CAE552F007AE885 /* LaunchScreen.storyboard */,
+				270E28F31CAE552F007AE885 /* Info.plist */,
+				270E28EB1CAE552F007AE885 /* UDPPlayer.xcdatamodeld */,
+				270E28DF1CAE552F007AE885 /* Supporting Files */,
+			);
+			path = UDPPlayer;
+			sourceTree = "<group>";
+		};
+		270E28DF1CAE552F007AE885 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				270E28E01CAE552F007AE885 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		270E28FB1CAE552F007AE885 /* UDPPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				270E28FC1CAE552F007AE885 /* UDPPlayerTests.m */,
+				270E28FE1CAE552F007AE885 /* Info.plist */,
+			);
+			path = UDPPlayerTests;
+			sourceTree = "<group>";
+		};
+		270E29061CAE5530007AE885 /* UDPPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				270E29071CAE5530007AE885 /* UDPPlayerUITests.m */,
+				270E29091CAE5530007AE885 /* Info.plist */,
+			);
+			path = UDPPlayerUITests;
+			sourceTree = "<group>";
+		};
+		270E29151CAE558F007AE885 /* Vitamio */ = {
+			isa = PBXGroup;
+			children = (
+				270E29161CAE558F007AE885 /* CHANGELOG.md */,
+				270E29171CAE558F007AE885 /* include */,
+				270E29211CAE558F007AE885 /* libffmpeg.a */,
+				270E29221CAE558F007AE885 /* libopenssl.a */,
+				270E29231CAE558F007AE885 /* libVitamio.a */,
+				270E29241CAE558F007AE885 /* LICENSE */,
+			);
+			path = Vitamio;
+			sourceTree = "<group>";
+		};
+		270E29171CAE558F007AE885 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				270E29181CAE558F007AE885 /* Vitamio */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		270E29181CAE558F007AE885 /* Vitamio */ = {
+			isa = PBXGroup;
+			children = (
+				270E29191CAE558F007AE885 /* VDefines.h */,
+				270E291A1CAE558F007AE885 /* Vitamio.h */,
+				270E291B1CAE558F007AE885 /* VMediaExtracter.h */,
+				270E291C1CAE558F007AE885 /* VMediaExtracterDef.h */,
+				270E291D1CAE558F007AE885 /* VMediaPlayer.h */,
+				270E291E1CAE558F007AE885 /* VMediaPlayerDelegate.h */,
+				270E291F1CAE558F007AE885 /* VPlayerManageDef.h */,
+				270E29201CAE558F007AE885 /* VSingleton.h */,
+			);
+			path = Vitamio;
+			sourceTree = "<group>";
+		};
+		273891331CC8F50700F0E921 /* ZYQAssetPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				273891341CC8F50700F0E921 /* ZYQAssetPicker.Bundle */,
+				273891351CC8F50700F0E921 /* ZYQAssetPickerController.h */,
+				273891361CC8F50700F0E921 /* ZYQAssetPickerController.m */,
+			);
+			path = ZYQAssetPickerController;
+			sourceTree = "<group>";
+		};
+		27452ED21CBCE6BD00AC5FDE /* UtoVRPlayerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				27452ED31CBCE6BD00AC5FDE /* UtoVRPlayer.framework */,
+				27452ED41CBCE6BD00AC5FDE /* UtoVRPlayerResouces.bundle */,
+			);
+			path = UtoVRPlayerSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		270E28DB1CAE552F007AE885 /* UDPPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270E290C1CAE5530007AE885 /* Build configuration list for PBXNativeTarget "UDPPlayer" */;
+			buildPhases = (
+				270E28D81CAE552F007AE885 /* Sources */,
+				270E28D91CAE552F007AE885 /* Frameworks */,
+				270E28DA1CAE552F007AE885 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UDPPlayer;
+			productName = UDPPlayer;
+			productReference = 270E28DC1CAE552F007AE885 /* UDPPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		270E28F71CAE552F007AE885 /* UDPPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270E290F1CAE5530007AE885 /* Build configuration list for PBXNativeTarget "UDPPlayerTests" */;
+			buildPhases = (
+				270E28F41CAE552F007AE885 /* Sources */,
+				270E28F51CAE552F007AE885 /* Frameworks */,
+				270E28F61CAE552F007AE885 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				270E28FA1CAE552F007AE885 /* PBXTargetDependency */,
+			);
+			name = UDPPlayerTests;
+			productName = UDPPlayerTests;
+			productReference = 270E28F81CAE552F007AE885 /* UDPPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		270E29021CAE5530007AE885 /* UDPPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270E29121CAE5530007AE885 /* Build configuration list for PBXNativeTarget "UDPPlayerUITests" */;
+			buildPhases = (
+				270E28FF1CAE5530007AE885 /* Sources */,
+				270E29001CAE5530007AE885 /* Frameworks */,
+				270E29011CAE5530007AE885 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				270E29051CAE5530007AE885 /* PBXTargetDependency */,
+			);
+			name = UDPPlayerUITests;
+			productName = UDPPlayerUITests;
+			productReference = 270E29031CAE5530007AE885 /* UDPPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		270E28D41CAE552F007AE885 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = joky;
+				TargetAttributes = {
+					270E28DB1CAE552F007AE885 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					270E28F71CAE552F007AE885 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 270E28DB1CAE552F007AE885;
+					};
+					270E29021CAE5530007AE885 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 270E28DB1CAE552F007AE885;
+					};
+				};
+			};
+			buildConfigurationList = 270E28D71CAE552F007AE885 /* Build configuration list for PBXProject "UDPPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 270E28D31CAE552F007AE885;
+			productRefGroup = 270E28DD1CAE552F007AE885 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				270E28DB1CAE552F007AE885 /* UDPPlayer */,
+				270E28F71CAE552F007AE885 /* UDPPlayerTests */,
+				270E29021CAE5530007AE885 /* UDPPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		270E28DA1CAE552F007AE885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270B80AB1CD9D86C00B12650 /* 白色返回_想去@2x.png in Resources */,
+				270B80A61CD9D86C00B12650 /* Default-568h@3x-1.png in Resources */,
+				27452ED61CBCE6BD00AC5FDE /* UtoVRPlayerResouces.bundle in Resources */,
+				270E28F21CAE552F007AE885 /* LaunchScreen.storyboard in Resources */,
+				270E28EF1CAE552F007AE885 /* Assets.xcassets in Resources */,
+				270B80A91CD9D86C00B12650 /* 扫描框@2x.png in Resources */,
+				273891371CC8F50700F0E921 /* ZYQAssetPicker.Bundle in Resources */,
+				2738913D1CC9F89F00F0E921 /* icon.png in Resources */,
+				270E29291CAE558F007AE885 /* LICENSE in Resources */,
+				270B80AA1CD9D86C00B12650 /* 扫描线@2x.png in Resources */,
+				270B80A81CD9D86C00B12650 /* 使用说明.rtf in Resources */,
+				27452EDC1CBCEA3000AC5FDE /* Marionette.mp4 in Resources */,
+				270E28EA1CAE552F007AE885 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E28F61CAE552F007AE885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E29011CAE5530007AE885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		270E28D81CAE552F007AE885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2738913B1CC9A4B400F0E921 /* homeController.m in Sources */,
+				270B80A71CD9D86C00B12650 /* QRCodeController.m in Sources */,
+				273891381CC8F50700F0E921 /* ZYQAssetPickerController.m in Sources */,
+				270E28ED1CAE552F007AE885 /* UDPPlayer.xcdatamodeld in Sources */,
+				270E29251CAE558F007AE885 /* CHANGELOG.md in Sources */,
+				2713B8A11CD87A65006ACBE9 /* chatController.m in Sources */,
+				270E28E71CAE552F007AE885 /* UDPController.m in Sources */,
+				270E28E41CAE552F007AE885 /* AppDelegate.m in Sources */,
+				270E28E11CAE552F007AE885 /* main.m in Sources */,
+				27452ED11CBCE3C200AC5FDE /* VRController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E28F41CAE552F007AE885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270E28FD1CAE552F007AE885 /* UDPPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E28FF1CAE5530007AE885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270E29081CAE5530007AE885 /* UDPPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		270E28FA1CAE552F007AE885 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270E28DB1CAE552F007AE885 /* UDPPlayer */;
+			targetProxy = 270E28F91CAE552F007AE885 /* PBXContainerItemProxy */;
+		};
+		270E29051CAE5530007AE885 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270E28DB1CAE552F007AE885 /* UDPPlayer */;
+			targetProxy = 270E29041CAE5530007AE885 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		270E28E81CAE552F007AE885 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270E28E91CAE552F007AE885 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		270E28F01CAE552F007AE885 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270E28F11CAE552F007AE885 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		270E290A1CAE5530007AE885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		270E290B1CAE5530007AE885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		270E290D1CAE5530007AE885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UtoVRPlayerSDK",
+				);
+				INFOPLIST_FILE = UDPPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vitamio",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu.UDPPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		270E290E1CAE5530007AE885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UtoVRPlayerSDK",
+				);
+				INFOPLIST_FILE = UDPPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vitamio",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu.UDPPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		270E29101CAE5530007AE885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UDPPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu.UDPPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UDPPlayer.app/UDPPlayer";
+			};
+			name = Debug;
+		};
+		270E29111CAE5530007AE885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UDPPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu.UDPPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UDPPlayer.app/UDPPlayer";
+			};
+			name = Release;
+		};
+		270E29131CAE5530007AE885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UDPPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu.UDPPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UDPPlayer;
+			};
+			name = Debug;
+		};
+		270E29141CAE5530007AE885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UDPPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu.UDPPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UDPPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		270E28D71CAE552F007AE885 /* Build configuration list for PBXProject "UDPPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270E290A1CAE5530007AE885 /* Debug */,
+				270E290B1CAE5530007AE885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270E290C1CAE5530007AE885 /* Build configuration list for PBXNativeTarget "UDPPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270E290D1CAE5530007AE885 /* Debug */,
+				270E290E1CAE5530007AE885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270E290F1CAE5530007AE885 /* Build configuration list for PBXNativeTarget "UDPPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270E29101CAE5530007AE885 /* Debug */,
+				270E29111CAE5530007AE885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270E29121CAE5530007AE885 /* Build configuration list for PBXNativeTarget "UDPPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270E29131CAE5530007AE885 /* Debug */,
+				270E29141CAE5530007AE885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		270E28EB1CAE552F007AE885 /* UDPPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				270E28EC1CAE552F007AE885 /* UDPPlayer.xcdatamodel */,
+			);
+			currentVersion = 270E28EC1CAE552F007AE885 /* UDPPlayer.xcdatamodel */;
+			path = UDPPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 270E28D41CAE552F007AE885 /* Project object */;
+}
